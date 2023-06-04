@@ -29,7 +29,7 @@ export function MapWidget() {
     }, []);
   
     return (
-        <div ref={mapRef} className="map-container">
+        <div ref={mapRef} className="mapContainer">
 
         </div>
     )
