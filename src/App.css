@@ -13,6 +13,21 @@
   color: #888;
 }
 
+/* Styles for chef title */ 
+
+.backgroundPictureOne {
+  width: 90vw;
+  height: 90vh;
+  background-position: center;
+  background-repeat: none;
+  background-size:cover;
+  background-image: url(./assets/ramenBowl1.jpg);
+}
+
+.backgroundPictureOne  h1 {
+  margin: 50px;
+  background-color: blue;
+}
 /* Styles for the Location and Map widget: */
 
 .mapContainer {
