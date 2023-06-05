@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import 'ol/ol.css';
+import * as ol from 'ol'
 import { Map, View } from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
@@ -18,15 +19,17 @@ export function MapWidget() {
           }),
         ],
         view: new View({
-          center: [0, 0],
-          zoom: 2,
+          center: [-2.5964916814185637, 51.45600970269076],
+          zoom: 18,
         }),
       });
+      console.log(ol.VERSION)
   
       return () => {
         map.setTarget(null);
       };
     }, []);
+    
   
     return (
         <div ref={mapRef} className="mapContainer">
