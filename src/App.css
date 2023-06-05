@@ -13,10 +13,17 @@
   color: #888;
 }
 
-/* Styles for the Map widget: */
+/* Styles for the Location and Map widget: */
 
 .mapContainer {
   width: 100%;
   height: 400px;
   margin-top: 20px;
+}
+
+/* Styles for the footer widget: */
+
+.instagramIcon {
+  width: 24px;
+  height: 24px;
 }

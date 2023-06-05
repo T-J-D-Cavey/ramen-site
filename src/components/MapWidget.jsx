@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react';
 import 'ol/ol.css';
-import * as ol from 'ol'
 import { Map, View } from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
+import { useGeographic } from 'ol/proj';
 
 export function MapWidget() {
     const mapRef = useRef(null);
@@ -23,7 +23,7 @@ export function MapWidget() {
           zoom: 18,
         }),
       });
-      console.log(ol.VERSION)
+      useGeographic();
   
       return () => {
         map.setTarget(null);
