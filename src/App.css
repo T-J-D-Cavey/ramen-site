@@ -1,34 +1,103 @@
+/* --------> Variables */
+
+:root {
+  /* need to add color defaults in this syntax:display: display: 
+    --color-primary: #4309A8;
+    --color-secondary: #FF5700;
+    --color-light: #F7F1F8;
+    --color-font-light: #F7F1F8;
+    --color-font-dark: #030A0E;
+  */
+}
+
+/* --------> Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  background-color: #888;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------> Styles for root DOM element */ 
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 1500px;
   text-align: center;
+  margin: 0 auto;
+  background-color: red;
 }
 
-.card {
-  padding: 2em;
+/* --------> Styles for utility classes for background: */ 
+
+.flexContainerBackground {
+  width: auto;
+  height: 90vh;
+  max-width: 1500px;
+  max-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
-.read-the-docs {
-  color: #888;
+.flexItemBackground {
+  background-color: green;
 }
 
-/* Styles for chef title */ 
+
+/* --------> Styles for chef title */ 
 
 .backgroundPictureOne {
-  width: 90vw;
-  height: 90vh;
-  background-position: center;
-  background-repeat: none;
-  background-size:cover;
-  background-image: url(./assets/ramenBowl1.jpg);
+  background-image: url(./assets/ramenBowl2.jpg);
 }
 
 .backgroundPictureOne  h1 {
-  margin: 50px;
-  background-color: blue;
+  font-size: 4rem;
 }
-/* Styles for the Location and Map widget: */
+/* -------->Styles for the Location and Map widget: */
 
 .mapContainer {
   width: 100%;
@@ -36,9 +105,17 @@
   margin-top: 20px;
 }
 
-/* Styles for the footer widget: */
+/* --------> Styles for the footer widget: */
 
 .instagramIcon {
   width: 24px;
   height: 24px;
+}
+
+
+
+@media screen and (min-width: 900px) {
+  .backgroundPictureOne  h1 {
+    font-size: 8rem;
+  }
 }
