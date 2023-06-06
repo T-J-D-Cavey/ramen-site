@@ -72,6 +72,51 @@ table {
   text-align: center;
   margin: 0 auto;
   background-color: #888;
+  /* background-image: url(./assets/ramenBowl2.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:  cover; */
+}
+
+/* --------> Styles for utility classes for background: */ 
+
+.flexContainerBigBackground {
+  width: auto;
+  height: 90vh;
+  max-width: 1500px;
+  max-height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.flexContainerSmallBackground {
+  width: auto;
+  height: 30vh;
+  max-width: 1500px;
+  max-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin: 0 auto;
+}
+
+.flexItemBackground {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10%;
+}
+
+.column {
+  flex-direction: column;
+}
+
+
+/* --------> Styles for ChefName and when Date */ 
+
+.backgroundPictureOne {
   background-image: url(./assets/ramenBowl2.jpg);
   background-position: center;
   background-attachment: fixed;
@@ -79,50 +124,36 @@ table {
   background-size:  cover;
 }
 
-/* --------> Styles for utility classes for background: */ 
-
-.flexContainerBackground {
-  width: auto;
-  height: 90vh;
-  max-width: 1500px;
-  max-height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:  cover;
-  /* border-radius: 25%; */
-}
-
-.flexItemBackground {
-  background-color: green;
-}
-
-
-/* --------> Styles for chef title */ 
-
-.backgroundPictureOne {
-  /* background-image: url(./assets/ramenBowl2.jpg); */
-}
-
-.backgroundPictureOne  h1 {
-  font-size: 4rem;
+.flexContainerBigBackground  h1 {
+  font-size: 6rem;
+  color: #BC002D;
 }
 /* -------->Styles for the Location and Map widget: */
 
 .backgroundPictureTwo {
-  /* margin-top: 2rem;
-  background-image: url(./assets/ramenBowl1.jpg); */
+  background-image: url(./assets/ramenBowl1.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:  cover;
 }
 
-/* -------->Styles for the Location and Map widget: */
+.location {
+
+}
+
+.address {
+
+}
 
 .mapContainer {
-  width: 100%;
-  height: 400px;
-  margin-top: 20px;
+  width: 50%;
+  max-width: 500px;
+  min-width: 260px;
+  height: 45%;
+  max-height: 550px;
+  min-height: 250px;
+  margin-top: 2rem;
 }
 
 /* --------> Styles for the footer widget: */

@@ -8,10 +8,14 @@ export default function App() {
 
   return (
     <>
-      <ChefName />
-      <Date />
-      <Location />
-      <Footer />
+      <div className='backgroundPictureOne'>
+        <ChefName />
+        <Date />
+      </div>
+      <div className='backgroundPictureTwo'>
+        <Location />
+        <Footer />
+      </div>
     </>
   )
 }
