@@ -41,7 +41,14 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
   background-color: #888;
+  /* 
+  background-image: url(./assets/ramenBowl2.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:  cover; */
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -64,7 +71,12 @@ table {
   max-width: 1500px;
   text-align: center;
   margin: 0 auto;
-  background-color: red;
+  background-color: #888;
+  background-image: url(./assets/ramenBowl2.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:  cover;
 }
 
 /* --------> Styles for utility classes for background: */ 
@@ -79,8 +91,9 @@ table {
   align-items: center;
   margin: 0 auto;
   background-position: center;
-  background-repeat:no-repeat;
-  background-size:cover;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  /* border-radius: 25%; */
 }
 
 .flexItemBackground {
@@ -91,12 +104,19 @@ table {
 /* --------> Styles for chef title */ 
 
 .backgroundPictureOne {
-  background-image: url(./assets/ramenBowl2.jpg);
+  /* background-image: url(./assets/ramenBowl2.jpg); */
 }
 
 .backgroundPictureOne  h1 {
   font-size: 4rem;
 }
+/* -------->Styles for the Location and Map widget: */
+
+.backgroundPictureTwo {
+  /* margin-top: 2rem;
+  background-image: url(./assets/ramenBowl1.jpg); */
+}
+
 /* -------->Styles for the Location and Map widget: */
 
 .mapContainer {
