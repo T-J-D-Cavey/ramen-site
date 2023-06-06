@@ -8,6 +8,8 @@
     --color-font-light: #F7F1F8;
     --color-font-dark: #030A0E;
   */
+    --font-header: 'Permanent Marker', cursive;
+    --font-body: 'Amatic SC', cursive;
 }
 
 /* --------> Reset CSS */
@@ -105,14 +107,25 @@ table {
 
 .flexItemBackground {
   background-color: white;
+  opacity: 0.9;
   padding: 2rem;
   border-radius: 10%;
 }
 
 .column {
   flex-direction: column;
+  justify-content: end;
 }
 
+.flexItemBackground h2 {
+  font-family: var(--font-header);
+  font-size: 2rem;
+}
+
+.flexItemBackground p {
+  font-family: var(--font-body);
+  font-size: 2rem;
+}
 
 /* --------> Styles for ChefName and when Date */ 
 
@@ -125,8 +138,13 @@ table {
 }
 
 .flexContainerBigBackground  h1 {
-  font-size: 6rem;
+  font-size: 4rem;
+  font-family: var(--font-header);
   color: #BC002D;
+}
+
+#black {
+  color: black;
 }
 /* -------->Styles for the Location and Map widget: */
 
@@ -136,6 +154,10 @@ table {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size:  cover;
+}
+
+#big {
+  height: 100vh;
 }
 
 .location {
@@ -153,7 +175,7 @@ table {
   height: 45%;
   max-height: 550px;
   min-height: 250px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 /* --------> Styles for the footer widget: */

@@ -12,10 +12,10 @@ export default function App() {
         <ChefName />
         <Date />
       </div>
-      <div className='backgroundPictureTwo'>
+      <div className='backgroundPictureTwo' id='big'>
         <Location />
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }
