@@ -3,7 +3,7 @@ import {MapWidget} from './MapWidget';
 export function Location() {
     return (
         <div className='flexContainerBigBackground column'>
-            <div className='flexItemBackground'>
+            <div className='flexItemBackground whereContainer'>
                 <h2>Where:</h2>
                 <p>
                     <a href='https://thechristmassteps.com/' target='_blank'>

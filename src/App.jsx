@@ -13,11 +13,11 @@ export default function App() {
         <ChefName />
         <Date />
       </div>
-      <div className='backgroundPicture pictureTwo' id='big'>
-        <Location />
-      </div>
       <div className='backgroundPicture pictureThree' id='big'>
         <Description />
+      </div>
+      <div className='backgroundPicture pictureTwo' id='big'>
+        <Location />
       </div>
       <Footer />
     </>

@@ -86,20 +86,14 @@ a:hover {
   text-align: center;
   margin: 0 auto;
   background-color: var(--color-theme);
-  /* background-image: url(./assets/ramenBowl2.jpg);
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size:  cover; */
 }
 
 /* --------> Styles for utility classes for background: */ 
 
 .flexContainerBigBackground {
-  width: auto;
-  height: 90vh;
+  width: 100%;
+  min-height: 90vh;
   max-width: 1500px;
-  max-height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,10 +101,9 @@ a:hover {
 }
 
 .flexContainerSmallBackground {
-  width: auto;
-  height: 30vh;
+  width: 100%;
+  min-height: 30vh;
   max-width: 1500px;
-  max-height: 700px;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -125,6 +118,7 @@ a:hover {
 }
 
 .backgroundPicture {
+  width: 100%;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -133,7 +127,7 @@ a:hover {
 
 .column {
   flex-direction: column;
-  justify-content: end;
+  /* justify-content: end; */
 }
 
 .flexItemBackground h2 {
@@ -156,6 +150,10 @@ a:hover {
   background-image: url(./assets/ramenBowl2.jpg);
 }
 
+.dateContainer {
+  margin-bottom: 10rem;
+}
+
 .flexContainerBigBackground  h1 {
   font-size: 4rem;
   font-family: var(--font-header);
@@ -172,17 +170,15 @@ a:hover {
 }
 
 #big {
-  height: 100vh;
+  min-height: 100vh;
 }
-
+.whereContainer {
+  margin-top: 10rem;
+}
 .mapContainer {
-  width: 50%;
-  max-width: 500px;
-  min-width: 260px;
-  height: 45%;
-  max-height: 550px;
-  min-height: 250px;
-  margin-top: 2rem;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem 0 10rem 0;
   border-radius: 1%;
   border: solid var(--color-background) 2px;
 }
@@ -192,9 +188,15 @@ a:hover {
   background-image: url(./assets/ramenBowl4.jpg);
 }
 
+.descriptionContainer {
+  margin: 15rem 0;
+}
+
 #chefPhoto {
-  width: 20rem;
+  max-width: 20rem;
+  width: 90%;
   height: auto;
+  margin: 2rem 0 2rem 0;
 }
 
 #long {
@@ -218,10 +220,21 @@ footer {
   height: 35px;
 }
 
-
+/* --------> Styles for big and small screens: */
 
 @media screen and (min-width: 900px) {
-  .backgroundPictureOne  h1 {
+  #h1Name {
     font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #h1Name {
+    padding: 0.5rem;
+  }
+
+  .mapContainer  {
+    width: 15rem;
+    height: 15rem;
   }
 }
