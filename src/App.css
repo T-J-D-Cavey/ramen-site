@@ -215,9 +215,14 @@ footer {
   align-items: center;
 }
 
-.instagramIcon {
+#instagramIcon, #githubIcon {
   width: 35px;
   height: 35px;
+  margin: 0 2vw;
+}
+
+footer :nth-child(2) {
+  border: solid white 1px !important;
 }
 
 /* --------> Styles for big and small screens: */
