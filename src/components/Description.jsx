@@ -7,16 +7,12 @@ export function Description() {
             <h2>Who:</h2>
             <img src={chef} alt='chef' id='chefPhoto' />
             <p id='long'>
-            Miura Anjin's pop-up ramen kitchen offers an unforgettable experience of authentic Japanese ramen. 
-            <br />
-            <br />
+            Miura Anjin's pop-up ramen kitchen offers an unforgettable experience of authentic Japanese ramen.  
             Indulge in flavorful ramen bowls crafted with care, 
             featuring handmade noodles that provide a delightful texture. 
             <br />
             <br />
             Miura's commitment to excellence is reflected in their use of the finest ingredients sourced directly from Japan. 
-            <br />
-            <br />
             Explore that day's delectable broth and savor the rich umami flavors that will transport you to the bustling streets of Tokyo. 
             <br />
             <br />

@@ -42,7 +42,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-  background-color: #888;
+  background-color: var(--color-theme);
   /* 
   background-image: url(./assets/ramenBowl2.jpg);
   background-position: center;
@@ -166,7 +166,7 @@ a:hover {
 /* -------->Styles for the Location and Map widget: */
 
 .pictureTwo {
-  background-image: url(./assets/ramenBowl1.jpg);
+  background-image: url(./assets/ramenBowl3.jpg);
 }
 
 #big {
@@ -202,7 +202,8 @@ a:hover {
 #long {
   font-family: var(--font-longtext);
   font-size: 1.4rem;
-  max-width: 30rem;
+  /* text-align: left; */
+  max-width: 26rem;
 }
 /* --------> Styles for the footer widget: */
 
@@ -218,11 +219,7 @@ footer {
 #instagramIcon, #githubIcon {
   width: 35px;
   height: 35px;
-  margin: 0 2vw;
-}
-
-footer :nth-child(2) {
-  border: solid white 1px !important;
+  margin: 0 2.5vw;
 }
 
 /* --------> Styles for big and small screens: */
