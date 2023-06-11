@@ -1,5 +1,5 @@
 import insta from '../assets/insta.svg'
-import github from '../assets/githubIcon2.svg';
+import github from '../assets/githubIcon.svg';
 
 export function Footer() {
     return (
