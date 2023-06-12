@@ -75,7 +75,7 @@ a:hover {
 /* --------> Styles for root DOM element */ 
 
 #root {
-  max-width: 1500px;
+  max-width: 1300px;
   text-align: center;
   margin: 0 auto;
   background-color: var(--color-theme);
@@ -111,9 +111,7 @@ a:hover {
 }
 
 .backgroundPicture {
-  /* width: 100%; */
   background-position: center;
-  /* background-repeat: no-repeat; */
   background-size: 6.5rem;
 }
 
@@ -223,7 +221,7 @@ footer {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:  cover; 
+    background-size:  contain; 
   }
 }
 
