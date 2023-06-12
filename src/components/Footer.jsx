@@ -1,5 +1,6 @@
 import insta from '../assets/insta.svg'
 import github from '../assets/githubIcon.svg';
+import favicon4 from '../../public/favicon4.png';
 
 export function Footer() {
     return (
@@ -8,6 +9,9 @@ export function Footer() {
                 <a href="https://www.instagram.com/medwayramen/" target="_blank" rel="noopener noreferrer">
                     <img src={insta} alt="Instagram Icon" id="instagramIcon" />
                 </a>
+            </div>
+            <div>
+                <img src={favicon4} alt="bowl of noodes" id="instagramIcon" />
             </div>
             <div>
                 <a href="https://github.com/T-J-D-Cavey" target='blank' rel="noopener noreferrer">
