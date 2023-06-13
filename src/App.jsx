@@ -11,18 +11,20 @@ export default function App() {
   useGeographic()
 
   return (
-    <>
+    <div className='rootContainer'>
       <div className='backgroundPicture pictureOne'>
         <ChefName />
+      </div>
+      <div className='backgroundPicture pictureTwo'>
         <Date />
       </div>
-      <div className='backgroundPicture pictureThree' id='big'>
+      <div className='backgroundPicture pictureThree'>
         <Description />
       </div>
-      <div className='backgroundPicture pictureTwo' id='big'>
+      <div className='backgroundPicture pictureFour'>
         <Location />
       </div>
       <Footer />
-    </>
+    </div>
   )
 }

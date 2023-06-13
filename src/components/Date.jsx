@@ -1,6 +1,6 @@
 export function Date() {
     return (
-        <div className='flexContainerSmallBackground'>
+        <div className='flexContainerBackground'>
             <div className='flexItemBackground dateContainer'>
                 <h2>When:</h2>
                 <p>

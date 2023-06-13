@@ -81,25 +81,21 @@ a:hover {
   background-color: var(--color-theme);
 }
 
+/* --------> Styles for root component */ 
+
+.rootContainer {
+
+}
+
 /* --------> Styles for utility classes for background: */ 
 
-.flexContainerBigBackground {
+.flexContainerBackground {
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   max-width: 1500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-}
-
-.flexContainerSmallBackground {
-  width: 100%;
-  min-height: 30vh;
-  max-width: 1500px;
-  display: flex;
-  justify-content: center;
-  align-items: start;
   margin: 0 auto;
 }
 
@@ -111,8 +107,9 @@ a:hover {
 }
 
 .backgroundPicture {
-  background-position: center;
-  background-size: 6.5rem;
+  background-position:top;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 .column {
@@ -133,7 +130,7 @@ a:hover {
   line-height: 1.3;
 }
 
-/* --------> Styles for ChefName and when Date */ 
+/* --------> Styles for ChefName */ 
 
 .pictureOne {
   background-image: url(./assets/ramenBowl2.jpg);
@@ -143,7 +140,7 @@ a:hover {
   margin-bottom: 10rem;
 }
 
-.flexContainerBigBackground  h1 {
+.flexContainerBackground h1 {
   font-size: 4rem;
   font-family: var(--font-header);
   color: var(--color-font-main);
@@ -152,25 +149,13 @@ a:hover {
 #black {
   color: var(--color-font-dark);
 }
-/* -------->Styles for the Location and Map widget: */
+
+/* --------> Styles for Date */
 
 .pictureTwo {
   background-image: url(./assets/ramenBowl3.jpg);
 }
 
-#big {
-  min-height: 100vh;
-}
-.whereContainer {
-  margin-top: 10rem;
-}
-.mapContainer {
-  width: 20rem;
-  height: 20rem;
-  margin: 2rem 0 10rem 0;
-  border-radius: 1%;
-  border: solid var(--color-background) 2px;
-}
 /* --------> Styles for description widget: */
 
 .pictureThree {
@@ -193,6 +178,24 @@ a:hover {
   font-size: 1.4rem;
   max-width: 26rem;
 }
+
+/* -------->Styles for the Location and Map widget: */
+
+.pictureFour {
+  background-image: url(./assets/ramenBowl1.jpg);
+}
+
+.whereContainer {
+  margin-top: 10rem;
+}
+.mapContainer {
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem 0 10rem 0;
+  border-radius: 1%;
+  border: solid var(--color-background) 2px;
+}
+
 /* --------> Styles for the footer widget: */
 
 footer {
@@ -217,7 +220,7 @@ footer {
     font-size: 8rem;
   }
 
-  .backgroundPicture {
+   .backgroundPicture {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

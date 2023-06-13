@@ -2,7 +2,7 @@ import chef from '../assets/chef.jpg'
 
 export function Description() {
     return (
-        <div className='flexContainerBigBackground'>
+        <div className='flexContainerBackground'>
         <div className='flexItemBackground descriptionContainer'>
             <h2>Who:</h2>
             <img src={chef} alt='chef' id='chefPhoto' />
