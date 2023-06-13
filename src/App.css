@@ -90,24 +90,26 @@ a:hover {
 /* --------> Styles for utility classes for background: */ 
 
 .flexContainerBackground {
-  width: 100%;
-  min-height: 100vh;
+  /* width: 100%; */
+  min-height: 100vh; 
   max-width: 1500px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  /* border-left: solid var(--color-background) 5px;
+  border-right: solid var(--color-background) 5px; */
 }
 
 .flexItemBackground {
   background-color: var(--color-background);
-  opacity: 0.9;
+  opacity: 0.2;
   padding: 2rem;
   border-radius: 5%;
 }
 
 .backgroundPicture {
-  background-position:top;
+  background-position:center;
   background-size:contain;
   background-repeat: no-repeat;
 }
@@ -132,12 +134,8 @@ a:hover {
 
 /* --------> Styles for ChefName */ 
 
-.pictureOne {
+#pictureOne {
   background-image: url(./assets/ramenBowl2.jpg);
-}
-
-.dateContainer {
-  margin-bottom: 10rem;
 }
 
 .flexContainerBackground h1 {
@@ -152,14 +150,20 @@ a:hover {
 
 /* --------> Styles for Date */
 
-.pictureTwo {
+#pictureTwo {
   background-image: url(./assets/ramenBowl3.jpg);
+}
+
+.dateContainer {
+/* margin-bottom: 10rem; */
 }
 
 /* --------> Styles for description widget: */
 
-.pictureThree {
-  background-image: url(./assets/ramenBowl4.jpg);
+#pictureThree {
+  background-image: url(./assets/ramenBowl4.jpg), url(./assets/ramenBowl3.jpg), url(./assets/ramenBowl1.jpg);
+  background-position: top center, center, bottom center;
+  /* background-size: 100% auto; */
 }
 
 .descriptionContainer {
@@ -181,7 +185,7 @@ a:hover {
 
 /* -------->Styles for the Location and Map widget: */
 
-.pictureFour {
+#pictureFour {
   background-image: url(./assets/ramenBowl1.jpg);
 }
 
@@ -220,12 +224,17 @@ footer {
     font-size: 8rem;
   }
 
-   .backgroundPicture {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:  contain; 
-  }
+ .backgroundPicture {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:  contain; 
+ }
+
+ .flexContainerBackground {
+  min-height: 50vh;
+ }
+ 
 }
 
 @media screen and (max-width: 350px) {

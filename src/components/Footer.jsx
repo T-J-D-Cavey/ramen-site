@@ -1,6 +1,6 @@
 import insta from '../assets/insta.svg'
 import github from '../assets/githubIcon.svg';
-import favicon4 from '../../public/favicon4.png';
+import favicon4 from '../assets/favFooter.png';
 
 export function Footer() {
     return (

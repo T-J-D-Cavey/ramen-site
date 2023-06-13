@@ -12,16 +12,16 @@ export default function App() {
 
   return (
     <div className='rootContainer'>
-      <div className='backgroundPicture pictureOne'>
+      <div className='backgroundPicture' id='pictureOne'>
         <ChefName />
       </div>
-      <div className='backgroundPicture pictureTwo'>
+      <div className='backgroundPicture' id='pictureTwo'>
         <Date />
       </div>
-      <div className='backgroundPicture pictureThree'>
+      <div className='backgroundPicture' id='pictureThree'>
         <Description />
       </div>
-      <div className='backgroundPicture pictureFour'>
+      <div className='backgroundPicture' id='pictureFour'>
         <Location />
       </div>
       <Footer />
