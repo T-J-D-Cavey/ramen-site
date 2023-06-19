@@ -10,6 +10,26 @@ export default function App() {
 
   useGeographic()
 
+
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    
+    const animatedElements = [
+      { element: document.getElementById('dateID'), triggerPosition: 800 },
+      { element: document.getElementById('whereID'), triggerPosition: 1800 }
+    ];
+    
+    animatedElements.forEach(function(item) {
+      const { element, triggerPosition } = item;
+      
+      if (scrollPosition >= triggerPosition) {
+        element.classList.add('rotateOnScroll');
+      } else {
+        element.classList.remove('rotateOnScroll');
+      }
+    });
+  });
+
   return (
     <div className='rootContainer'>
       <div className='backgroundPicture' id='pictureOne'>

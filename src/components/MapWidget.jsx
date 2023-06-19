@@ -23,7 +23,6 @@ export function MapWidget() {
           zoom: 18,
         }),
       });
-      useGeographic();
   
       return () => {
         map.setTarget(null);

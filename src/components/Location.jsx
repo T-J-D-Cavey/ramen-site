@@ -4,7 +4,7 @@ export function Location() {
     return (
         <div className='flexContainerBackground column'>
             <MapWidget className='flexItemBackground'/>
-            <div className='flexItemBackground whereContainer'>
+            <div className='flexItemBackground whereContainer rotateOnScroll' id='whereID'>
                 <h2>Where:</h2>
                 <p>
                     <a href='https://thechristmassteps.com/' target='_blank'>
