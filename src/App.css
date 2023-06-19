@@ -218,7 +218,7 @@ footer {
 
 .rotateOnScroll {
   animation-name: rotateAnimation;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.28, 0.65, 0.74, 1.1);
   animation-iteration-count: 1;
 }
