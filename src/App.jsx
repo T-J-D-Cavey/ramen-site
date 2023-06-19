@@ -15,7 +15,7 @@ export default function App() {
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
     
     const animatedElements = [
-      { element: document.getElementById('dateID'), triggerPosition: 1000 },
+      { element: document.getElementById('dateID'), triggerPosition: 900 },
       { element: document.getElementById('whereID'), triggerPosition: 1800 }
     ];
     
