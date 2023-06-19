@@ -204,7 +204,11 @@ footer {
 /* --------> Styles for animation: */
 
 @keyframes rotateAnimation {
+  
   0% {
+    transform: rotateX(360deg) rotateY(360deg) scale(1);
+  }
+  50% {
     transform: rotateX(270deg) rotateY(270deg) scale(0.5);
   }
   100% {
