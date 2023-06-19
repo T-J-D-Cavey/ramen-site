@@ -1,6 +1,6 @@
 # Miura Anjin's Ramen Pop-up Site
 
-Discover the upcoming locations and dates for Miura Anjin's pop-up ramen restaurant. Deployed site here: tbc
+Discover the upcoming locations and dates for Miura Anjin's pop-up ramen restaurant. Deployed site here: https://miura-anjin-ramen.netlify.app/
 
 ## Project Overview
 
