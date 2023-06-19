@@ -16,10 +16,10 @@ export default function App() {
         <ChefName />
       </div>
       <div className='backgroundPicture' id='pictureTwo'>
-        <Date />
+        <Description />
       </div>
       <div className='backgroundPicture' id='pictureThree'>
-        <Description />
+        <Date />
       </div>
       <div className='backgroundPicture' id='pictureFour'>
         <Location />
