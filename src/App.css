@@ -75,36 +75,23 @@ a:hover {
 /* --------> Styles for root DOM element */ 
 
 #root {
-  /* max-width: 1300px; */
   text-align: center;
   margin: 0 auto;
   background-color: var(--color-theme);
 }
 
-/* --------> Styles for root component */ 
-
-.rootContainer {
-  /* max-width: 2000px;
-  margin: 0 auto; */
-}
-
 /* --------> Styles for utility classes for background: */ 
 
 .flexContainerBackground {
-  /* width: 100vw;
-  min-height: 100vh; 
-  max-width: 1500px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 0 auto; */
 }
 
 .flexItemBackground {
   background-color: var(--color-background);
   opacity: 0.95;
   padding: 2rem;
-  /* border-radius: 1%; */
 }
 
 .backgroundPicture {
@@ -135,7 +122,6 @@ a:hover {
 
 #pictureOne {
   background-image: url(./assets/ramenBowl2.jpg);
-  /* background-size: contain; */
 }
 
 #pictureOne .flexContainerBackground {
@@ -157,11 +143,6 @@ a:hover {
 
 #pictureTwo {
   background-image: url(./assets/tokyoOne.jpg);
-  /* background-size: cover; */
-}
-
-.descriptionContainer {
-  /* margin: 15rem 0; */
 }
 
 #chefPhoto {
@@ -181,15 +162,10 @@ a:hover {
 
 #pictureThree {
   background-image: url(./assets/ramenBowl3.jpg);
-  /* background-size: contain; */
 }
 
 #pictureThree .flexContainerBackground {
   min-height: 65vh;
-}
-
-.dateContainer {
-/* margin-bottom: 10rem; */
 }
 
 /* -------->Styles for the Location and Map widget: */
@@ -249,8 +225,6 @@ footer {
 
   #root {
     width: 900px;
-    /* border-left: solid 5rem var(--color-theme);
-    border-right: solid 5rem var(--color-theme); */
     margin: 0 auto;
 
   }
@@ -265,15 +239,12 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
  }
-
 }
 
 @media screen and (min-width: 1600px) {
 
   #root {
     width: 900px;
-    /* border-left: solid 5rem var(--color-theme);
-    border-right: solid 5rem var(--color-theme); */
     margin: 0 auto;
 
   }
@@ -291,7 +262,6 @@ footer {
 
 }
 
-
 @media screen and (max-width: 350px) {
   #h1Name {
     padding: 0.5rem;
@@ -301,5 +271,4 @@ footer {
     width: 15rem;
     height: 15rem;
   }
-
 }
