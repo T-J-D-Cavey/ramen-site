@@ -90,7 +90,7 @@ a:hover {
 /* --------> Styles for utility classes for background: */ 
 
 .flexContainerBackground {
-  /* width: 100%; */
+  width: 100vw;
   min-height: 100vh; 
   max-width: 1500px;
   display: flex;
@@ -110,7 +110,7 @@ a:hover {
 
 .backgroundPicture {
   background-position:center;
-  background-size:contain;
+  /* background-size:contain; */
   background-repeat: no-repeat;
 }
 
@@ -136,6 +136,7 @@ a:hover {
 
 #pictureOne {
   background-image: url(./assets/ramenBowl2.jpg);
+  background-size: contain;
 }
 
 .flexContainerBackground h1 {
@@ -152,18 +153,18 @@ a:hover {
 
 #pictureTwo {
   background-image: url(./assets/ramenBowl3.jpg);
+  background-size: contain;
 }
 
 .dateContainer {
 /* margin-bottom: 10rem; */
 }
 
-/* --------> Styles for description widget: */
+/* --------> Styles for descsosplaription widget: */
 
 #pictureThree {
-  background-image: url(./assets/ramenBowl4.jpg), url(./assets/ramenBowl3.jpg), url(./assets/ramenBowl1.jpg);
-  background-position: top center, center, bottom center;
-  /* background-size: 100% auto; */
+  background-image: url(./assets/tokyoOne.jpg);
+  background-size: cover;
 }
 
 .descriptionContainer {
@@ -186,7 +187,8 @@ a:hover {
 /* -------->Styles for the Location and Map widget: */
 
 #pictureFour {
-  background-image: url(./assets/ramenBowl1.jpg);
+  background-image: url(./assets/bristolOne.jpg);
+  background-size: cover;
 }
 
 .whereContainer {
@@ -228,8 +230,16 @@ footer {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+ }
+
+ #pictureOne, #pictureTwo {
   background-size:  contain; 
  }
+
+ #pictureThree, #pictureFour {
+  background-size: cover;
+  /* min-height: 100vh; */
+ } 
 
  .flexContainerBackground {
   min-height: 50vh;
