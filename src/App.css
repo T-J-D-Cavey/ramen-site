@@ -84,7 +84,8 @@ a:hover {
 /* --------> Styles for root component */ 
 
 .rootContainer {
-
+  /* max-width: 2000px;
+  margin: 0 auto; */
 }
 
 /* --------> Styles for utility classes for background: */ 
@@ -96,12 +97,12 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .flexItemBackground {
   background-color: var(--color-background);
-  opacity: 0.2;
+  opacity: 0.9;
   padding: 2rem;
   border-radius: 1%;
 }
@@ -195,11 +196,10 @@ a:hover {
 
 #pictureFour {
   background-image: url(./assets/bristolOne.jpg);
-  background-size: cover;
 }
 
 .whereContainer {
-  /* margin-top: 10rem; */
+  margin-bottom: 8rem;
 }
 .mapContainer {
   width: 20rem;
@@ -228,7 +228,16 @@ footer {
 
 /* --------> Styles for big and small screens: */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) and (max-width: 1599px) {
+
+  #root {
+    width: 900px;
+    /* border-left: solid 5rem var(--color-theme);
+    border-right: solid 5rem var(--color-theme); */
+    margin: 0 auto;
+
+  }
+
   #h1Name {
     font-size: 8rem;
   }
@@ -237,22 +246,34 @@ footer {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
  }
 
- #pictureOne, #pictureTwo {
-  /* background-size:  contain;  */
- }
-
- #pictureThree, #pictureFour {
-  /* background-size: cover; */
-  /* min-height: 100vh; */
- } 
-
- .flexContainerBackground {
-  /* min-height: 50vh; */
- }
- 
 }
+
+@media screen and (min-width: 1600px) {
+
+  #root {
+    width: 900px;
+    /* border-left: solid 5rem var(--color-theme);
+    border-right: solid 5rem var(--color-theme); */
+    margin: 0 auto;
+
+  }
+
+  #h1Name {
+    font-size: 8rem;
+  }
+
+ .backgroundPicture {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
+
+}
+
 
 @media screen and (max-width: 350px) {
   #h1Name {
